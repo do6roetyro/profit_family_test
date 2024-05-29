@@ -1,0 +1,16 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.topics__wrapper {
+  padding-top: 2rem;
+  display: flex;
+}
+
+.topics__popular {
+  flex-shrink: 0;
+  max-width: 280px;
+
+  @media (max-width: variables.$screen-tablet) {
+    display: none;
+  }
+}

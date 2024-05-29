@@ -1,0 +1,67 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  picture {
+    flex-shrink: 0;
+    margin: auto;
+    margin-right: 4rem;
+
+  }
+
+
+}
+
+.swiper-slide__title {
+  padding-bottom: 1rem;
+}
+
+.swiper-slide__wrapper {
+  padding-left: 4rem;
+  padding-right: 2rem;
+  width: clamp(280px, 42vw, 640px);
+}
+
+.swiper-slide__image {
+
+  border-radius: 0.5rem;
+  object-fit: contain;
+  width: clamp(256px, 30vw, 344px);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 50%;
+
+&:hover {
+  opacity: 0.5;
+}
+
+  &::after {
+    color: transparent;
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+
+    background-color: variables.$color-white;
+
+    mask-image: url("../../images/icons/stack.svg#arrow");
+  }
+}
+
+.swiper-button-prev {
+  &::after {
+    transform: rotate(180deg);
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: #f2f2f2;
+}

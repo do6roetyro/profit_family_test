@@ -1,0 +1,19 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.main-header {
+  background-color: variables.$color-deep-darkblue;
+}
+
+.main-header__container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-grow: 1;
+
+}
+
+
+
+

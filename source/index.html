@@ -4,27 +4,503 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" href="fonts/Raleway-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+    <link
+      rel="preload"
+      href="fonts/ptsans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="favicons/apple-touch-icon.png" type="image/png" />
+
     <script defer="defer" src="scripts/index.js"></script>
-    <title>Tenloc</title>
+    <title>Profit_Family_test</title>
   </head>
 
   <body class="page__body">
     <div class="page__container">
       <header class="main-header">
-
+        <nav class="main-header__navigation navigation wrapper">
+          <a class="navigation__main-link main-link" href="#">
+            <span class="visually-hidden">Перейти на главную страницу</span>
+            <img
+              class="main-link__logo"
+              src="https://assets.htmlacademy.ru/img/logo.v2.svg"
+              width="104"
+              height="36"
+              alt="HTML Academy"
+            />
+          </a>
+          <button class="main-header__button menu-button" type="button"></button>
+          <div class="main-header__container">
+          <ul class="navigation__list learn-blocks list">
+            <li
+              class="navigation__item navigation__item--learn learn-block"
+              tabindex="0"
+            >
+              <span
+                class="navigation__title learn-block__title learn-block__title--courses"
+              >
+                <span>Курсы</span>
+              </span>
+              <ul class="learn-block__list list">
+                <li class="learn-block__item">
+                  <a class="navigation__link link" href="#"
+                    >HTML и CSS, уровень 1</a
+                  >
+                </li>
+                <li class="learn-block__item">
+                  <a class="navigation__link link" href="#"
+                    >HTML и CSS, уровень 2</a
+                  >
+                </li>
+                <li class="learn-block__item">
+                  <a class="navigation__link link" href="#"
+                    >JavaScript, уровень 1</a
+                  >
+                </li>
+                <li class="learn-block__item">
+                  <a class="navigation__link link" href="#"
+                    >JavaScript, уровень 2</a
+                  >
+                </li>
+                <li class="learn-block__item">
+                  <a class="navigation__link link" href="#"
+                    >Node.js, уровень 1</a
+                  >
+                </li>
+                <li class="learn-block__item">
+                  <a class="navigation__link link" href="#">PHP, уровень 1</a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="navigation__item navigation__item--learn learn-block"
+              tabindex="0"
+            >
+              <span
+                class="navigation__title learn-block__title learn-block__title--professions"
+              >
+                <span>Профессии</span>
+              </span>
+              <ul class="learn-block__list list">
+                <li class="learn-block__item">
+                  <a class="navigation__link link" href="#"
+                    >HTML и CSS, уровень 1</a
+                  >
+                </li>
+                <li class="learn-block__item">
+                  <a class="navigation__link link" href="#"
+                    >HTML и CSS, уровень 2</a
+                  >
+                </li>
+                <li class="learn-block__item">
+                  <a class="navigation__link link" href="#"
+                    >JavaScript, уровень 1</a
+                  >
+                </li>
+                <li class="learn-block__item">
+                  <a class="navigation__link link" href="#"
+                    >JavaScript, уровень 2</a
+                  >
+                </li>
+                <li class="learn-block__item">
+                  <a class="navigation__link link" href="#"
+                    >Node.js, уровень 1</a
+                  >
+                </li>
+                <li class="learn-block__item">
+                  <a class="navigation__link link" href="#">PHP, уровень 1</a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="navigation__item navigation__item--learn learn-block"
+              tabindex="0"
+            >
+              <span
+                class="navigation__title learn-block__title learn-block__title--intensives"
+              >
+                <span>Интенсивы</span>
+              </span>
+              <ul class="learn-block__list list">
+                <li class="learn-block__item">
+                  <a class="navigation__link link" href="#"
+                    >HTML и CSS, уровень 1</a
+                  >
+                </li>
+                <li class="learn-block__item">
+                  <a class="navigation__link link" href="#"
+                    >HTML и CSS, уровень 2</a
+                  >
+                </li>
+                <li class="learn-block__item">
+                  <a class="navigation__link link" href="#"
+                    >JavaScript, уровень 1</a
+                  >
+                </li>
+                <li class="learn-block__item">
+                  <a class="navigation__link link" href="#"
+                    >JavaScript, уровень 2</a
+                  >
+                </li>
+                <li class="learn-block__item">
+                  <a class="navigation__link link" href="#"
+                    >Node.js, уровень 1</a
+                  >
+                </li>
+                <li class="learn-block__item">
+                  <a class="navigation__link link" href="#">PHP, уровень 1</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="navigation__list user-list list">
+            <li class="navigation__item user-list__item">
+              <a
+                class="navigation__title user-list__title--registration user-list__title navigation__link link"
+                href="#"
+              >
+                <span class="user-list__text"> Регистрация</span>
+              </a>
+            </li>
+            <li class="navigation__item user-list__item">
+              <a
+                class="navigation__title user-list__title--logout user-list__title navigation__link link"
+                href="#"
+                ><span class="user-list__text">Выйти</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        </nav>
       </header>
       <main class="main-container">
-        <h1 class="visually-hidden">'Ягоды' - Ягоды с доставкой</h1>
+        <h1 class="visually-hidden">Тестовое задание для Profit_Family</h1>
+        <section class="hero">
+          <h2 class="visually-hidden">Сервис IT курсов</h2>
+          <div class="hero__wrapper wrapper">
+            <div class="hero__swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper-slide__wrapper">
+                    <h2 class="swiper-slide__title">Объединение классов</h2>
+                    <p class="swiper-slide__description">
+                      Объединение классов в веб-разработке позволяет улучшить
+                      читаемость и поддержку кода. Это помогает разработчикам
+                      легко находить и изменять стили, связанные с определёнными
+                      элементами. В конечном итоге это ведёт к более эффективной
+                      и управляемой разработке веб-приложений.
+                    </p>
+                  </div>
+                  <picture>
+                    <source
+                      media="(min-width:320px)"
+                      srcset="
+                        images/blackberry@1x.webp 1x,
+                        images/blackberry@2x.webp 2x
+                      "
+                      type="image/webp"
+                      width="344"
+                      height="256"
+                    />
+                    <img
+                      class="swiper-slide__image"
+                      loading="lazy"
+                      src="images/blackberry@1x.jpg"
+                      srcset="images/blackberry@2x.jpg 2x"
+                      width="344"
+                      height="256"
+                      alt="Черника."
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__wrapper">
+                    <h2 class="swiper-slide__title">
+                      Роль Градиентов в Веб-Дизайне
+                    </h2>
+                    <p class="swiper-slide__description">
+                      Градиенты играют важную роль в современном веб-дизайне,
+                      добавляя глубину и динамичность. Они позволяют создавать
+                      плавные переходы между цветами, что придает элементам
+                      интерфейса более профессиональный и визуально приятный
+                      вид. Использование градиентов может значительно улучшить
+                      восприятие и взаимодействие пользователей с веб-сайтами.
+                    </p>
+                  </div>
+                  <picture>
+                    <source
+                      media="(min-width:320px)"
+                      srcset="
+                        images/cherry@1x.webp 1x,
+                        images/cherry@2x.webp 2x
+                      "
+                      type="image/webp"
+                      width="344"
+                      height="256"
+                    />
+                    <img
+                      class="swiper-slide__image"
+                      loading="lazy"
+                      src="images/cherry@1x.jpg"
+                      srcset="images/cherry@2x.jpg 2x"
+                      width="344"
+                      height="256"
+                      alt="Вишня."
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__wrapper">
+                    <h2 class="swiper-slide__title">
+                      Инновации в Современной Веб-Разработке
+                    </h2>
+                    <p class="swiper-slide__description">
+                      Современные технологии веб-разработки продолжают
+                      развиваться с невероятной скоростью. Новые инструменты и
+                      фреймворки упрощают создание сложных и интерактивных
+                      веб-приложений. Эти инновации позволяют разработчикам
+                      создавать более эффективные и
+                      пользовательно-ориентированные решения.
+                    </p>
+                  </div>
+                  <picture>
+                    <source
+                      media="(min-width:320px)"
+                      srcset="
+                        images/blueberry@1x.webp 1x,
+                        images/blueberry@2x.webp 2x
+                      "
+                      type="image/webp"
+                      width="344"
+                      height="256"
+                    />
+                    <img
+                      class="swiper-slide__image"
+                      loading="lazy"
+                      src="images/blueberry@1x.jpg"
+                      srcset="images/blueberry@2x.jpg 2x"
+                      width="344"
+                      height="256"
+                      alt="Ежевика."
+                    />
+                  </picture>
+                </div>
+                ...
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
 
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+        </section>
+        <section class="topics">
+          <h2 class="visually-hidden">Главная статья</h2>
+          <div class="topics__wrapper wrapper">
+            <article class="topics__article article">
+              <h3 class="article__title">
+                Превосходство Адаптивного Дизайна: Ключ к Оптимальному
+                Пользовательскому Опыту
+              </h3>
+              <p class="article__description">
+                <span>
+                  <b
+                    >Адаптивный дизайн - это не только модное слово в мире
+                    веб-разработки, но и критически важная концепция для
+                    обеспечения максимального комфорта и удобства пользователей
+                    на всех устройствах. С развитием разнообразия устройств
+                    доступа к интернету - от настольных компьютеров до
+                    смартфонов и планшетов - важно создать интерфейс, который
+                    легко читать и использовать на любом устройстве.</b
+                  ></span
+                >
+
+                <span
+                  >Адаптивный дизайн основан на идее создания веб-страниц,
+                  которые могут автоматически изменять свой вид и компоновку в
+                  зависимости от размера экрана устройства пользователя. Это
+                  означает, что веб-сайт будет выглядеть и функционировать
+                  оптимально как на больших мониторах, так и на маленьких
+                  смартфонах, без необходимости создавать отдельные версии для
+                  каждого устройства. Преимущества адаптивного дизайна
+                  очевидны.</span
+                >
+                <span
+                  >Во-первых, это повышает доступность контента для широкого
+                  круга пользователей, независимо от их устройства. Во-вторых,
+                  это способствует улучшению поисковой оптимизации, так как
+                  поисковые системы, такие как Google, предпочитают адаптивные
+                  веб-сайты. В-третьих, это улучшает пользовательский опыт,
+                  снижая отказы и повышая вовлеченность. И, конечно же,
+                  адаптивный дизайн помогает вам оставаться конкурентоспособным
+                  в быстро меняющемся мире интернета. В современном мобильном
+                  первом мире, где большинство пользователей заходят в интернет
+                  с мобильных устройств, адаптивность становится неотъемлемой
+                  частью успешного онлайн-присутствия.</span
+                >
+                <span>
+                  В заключение, адаптивный дизайн - это не просто хорошая идея,
+                  это необходимость. Инвестирование в создание адаптивного
+                  веб-сайта обеспечивает ваш бизнес средством привлечения и
+                  удержания пользователей в современном цифровом
+                  ландшафте.</span
+                >
+              </p>
+
+              <blockquote
+                class="article_quote quote"
+                cite="https://aldous-huxley.net"
+              >
+                <p class="quote__description">
+                  <span> &#8220;</span> Адаптивный дизайн - это не просто
+                  хорошая идея, <br />это необходимость, это стандарт.
+                </p>
+              </blockquote>
+            </article>
+            <aside class="topics__popular popular">
+              <h3 class="popular__title">
+                <ul class="popular__list list">
+                  <li class="popular__item popular-item">
+                    <a class="popular-item__link" href="#">
+                      <img
+                        class="popular-item__image"
+                        src="data:image/png;base64,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"
+                        alt="Спам"
+                        width="64"
+                        height="64"
+                      />
+                      <div class="popular-item__container">
+                        <h4 class="popular-item__title">
+                          Исследование новых горизонтов
+                        </h4>
+                        <time
+                          class="popular-item__datetime"
+                          datetime="2021-10-12"
+                          >12 октября 2021</time
+                        >
+                      </div>
+                    </a>
+                  </li>
+                  <li class="popular__item popular-item">
+                    <a class="popular-item__link" href="#">
+                      <img
+                        class="popular-item__image"
+                        src="data:image/jpeg;base64,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"
+                        alt="Спам"
+                        width="64"
+                        height="64"
+                      />
+                      <div class="popular-item__container">
+                        <h4 class="popular-item__title">
+                          Тайны глубокого океана
+                        </h4>
+                        <time
+                          class="popular-item__datetime"
+                          datetime="2021-10-12"
+                          >12 октября 2021</time
+                        >
+                      </div>
+                    </a>
+                  </li>
+                  <li class="popular__item popular-item">
+                    <a class="popular-item__link" href="#">
+                      <img
+                        class="popular-item__image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxBGUKY_uSI3gQu9qWn-OjebWSoZmwAaDBQg&s"
+                        alt="Спам"
+                        width="64"
+                        height="64"
+                      />
+                      <div class="popular-item__container">
+                        <h4 class="popular-item__title">
+                          Путешествие в прошлое
+                        </h4>
+                        <time
+                          class="popular-item__datetime"
+                          datetime="2021-10-12"
+                          >12 октября 2021</time
+                        >
+                      </div>
+                    </a>
+                  </li>
+                  <li class="popular__item popular-item">
+                    <a class="popular-item__link" href="#">
+                      <img
+                        class="popular-item__image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxBGUKY_uSI3gQu9qWn-OjebWSoZmwAaDBQg&s"
+                        alt="Спам"
+                        width="64"
+                        height="64"
+                      />
+                      <div class="popular-item__container">
+                        <h4 class="popular-item__title">
+                          Магия средневековья: тайны и секреты
+                        </h4>
+                        <time
+                          class="popular-item__datetime"
+                          datetime="2021-10-12"
+                          >12 октября 2021</time
+                        >
+                      </div>
+                    </a>
+                  </li>
+                  <li class="popular__item popular-item">
+                    <a class="popular-item__link" href="#">
+                      <img
+                        class="popular-item__image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxBGUKY_uSI3gQu9qWn-OjebWSoZmwAaDBQg&s"
+                        alt="Спам"
+                        width="64"
+                        height="64"
+                      />
+                      <div class="popular-item__container">
+                        <h4 class="popular-item__title">Борьба за будущее</h4>
+                        <time
+                          class="popular-item__datetime"
+                          datetime="2021-10-12"
+                          >12 октября 2021</time
+                        >
+                      </div>
+                    </a>
+                  </li>
+                  <li class="popular__item popular-item">
+                    <a class="popular-item__link" href="#">
+                      <img
+                        class="popular-item__image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxBGUKY_uSI3gQu9qWn-OjebWSoZmwAaDBQg&s"
+                        alt="Спам"
+                        width="64"
+                        height="64"
+                      />
+                      <div class="popular-item__container">
+                        <h4 class="popular-item__title">
+                          Романтика под звёздами
+                        </h4>
+                        <time
+                          class="popular-item__datetime"
+                          datetime="2021-10-12"
+                          >12 октября 2021</time
+                        >
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </h3>
+            </aside>
+          </div>
+        </section>
       </main>
-      <footer class="main-footer">
-
-      </footer>
+      <footer class="main-footer"></footer>
     </div>
   </body>
 </html>

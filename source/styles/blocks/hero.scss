@@ -1,0 +1,13 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.hero {
+  background: linear-gradient(135deg, #292929 35%, #292929 55%, #3a3a3a 90%);
+  color: variables.$color-white;
+
+  @media(max-width:variables.$screen-mobile-xl) {
+    display: none;
+  }
+}
+
+

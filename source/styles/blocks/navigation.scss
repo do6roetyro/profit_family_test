@@ -1,0 +1,95 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.navigation {
+  max-width: variables.$screen-desktop;
+  color: variables.$color-white;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navigation__list {
+  display: flex;
+}
+
+.navigation__item {
+  cursor: pointer;
+  padding: 16px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &:hover {
+    &:hover,
+    &:focus-within {
+      background-color: #414157;
+      .learn-block__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
+    .navigation__title {
+      color: #8f8f9b;
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &--learn {
+    &::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-width: 6px 4px 0;
+      border-style: solid;
+      border-color: #8f8f9b transparent transparent;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.navigation__title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    background-color: variables.$color-white;
+    opacity: 0.5;
+  }
+
+  @media(max-width: variables.$screen-tablet) {
+    span {
+      display: none;
+    }
+  }
+}
+
+.navigation__link {
+  &:hover {
+    color: #8f8f9b;
+  }
+}
+
+.navigation__main-link {
+  margin-right: 36px;
+  flex-shrink: 0;
+
+  @media (max-width: 1024px) {
+    margin-right: 16px;
+  }
+}

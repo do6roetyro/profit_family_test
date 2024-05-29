@@ -1,0 +1,46 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.learn-block {
+  &:hover,
+  &:focus-within {
+    background-color: #414157;
+    .learn-block__list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+
+}
+
+.learn-block__list {
+  display: none;
+  position: absolute;
+  background-color: #414157;
+  width: fit-content;
+  top: 46px;
+  left: 0;
+  min-width: 300px;
+  padding: 16px;
+  z-index: 5;
+}
+
+.learn-block__title {
+  &--intensives {
+    &::before {
+      mask-image: url("../../images/icons/stack.svg#bolt");
+    }
+  }
+  &--courses {
+    &::before {
+      mask-image: url("../../images/icons/stack.svg#settings");
+    }
+  }
+  &--professions {
+    &::before {
+      mask-image: url("../../images/icons/stack.svg#star");
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.popular {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.popular__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

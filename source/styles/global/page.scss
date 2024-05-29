@@ -7,7 +7,7 @@
 
 .page__body {
   height: 100dvh;
-  font-family: variables.$font-raleway;
+  font-family: variables.$font-ptsans;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -16,6 +16,7 @@
   margin: 0;
   text-wrap: wrap;
   min-height: 100%;
+  position: relative;
 }
 
 .page__container {
@@ -24,5 +25,5 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  background-color: variables.$color-bg-white;
+  background-color: variables.$color-white;
 }

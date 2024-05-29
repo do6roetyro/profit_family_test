@@ -1,0 +1,9 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.menu-button {
+  display: none;
+  @media (max-width: variables.$screen-mobile-xl) {
+    display: block;
+  }
+}
