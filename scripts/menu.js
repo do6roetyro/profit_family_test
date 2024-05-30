@@ -1,0 +1,1 @@
+var e=document.querySelector(".menu-button"),t=document.querySelector(".main-header__container--bottom"),n=()=>{e.addEventListener("click",()=>{t.classList.toggle("close"),e.classList.toggle("is-active")})},o=n;export{o as default};
