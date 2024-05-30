@@ -2,7 +2,6 @@
 @use "../global/mixins.scss";
 
 .user-list__title {
-
   &--registration {
     &::before {
       content: "";
@@ -14,6 +13,7 @@
       opacity: 0.5;
     }
   }
+
   &--logout {
     &::before {
       content: "";
@@ -25,22 +25,41 @@
       opacity: 0.5;
     }
   }
+
   @media (max-width: 1024px) {
     .user-list__text {
       display: none;
     }
   }
+
+  @media (max-width: variables.$screen-mobile-xl) {
+    .user-list__text {
+      display: block;
+    }
+  }
 }
 
 .user-list {
-  margin-left: auto;
-
+  @media (min-width: variables.$screen-mobile-xl) {
+    margin-left: auto;
+  }
 }
 
 .user-list__item {
-  padding: 0;
+  @media (min-width: variables.$screen-tablet) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
 }
 
 .user-list__title {
   padding: 16px;
+
+  @media (max-width: variables.$screen-mobile-xl) {
+    padding: 0;
+  }
 }

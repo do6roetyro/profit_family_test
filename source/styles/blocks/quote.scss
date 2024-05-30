@@ -1,3 +1,6 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
 .quote {
   quotes: none;
 }
@@ -7,15 +10,20 @@
   font-size: 2rem;
   position: relative;
 
-span {
-  position: absolute;
-  left: -60px;
+  @media (max-width: variables.$screen-mobile-xl) {
+    font-size: 1rem;
+  }
+
+  span {
+    position: absolute;
+    left: -60px;
     top: -31px;
-  font-size: 7rem;
-  opacity: 0.5;
+    font-size: 7rem;
+    opacity: 0.5;
+
+    @media (max-width: variables.$screen-mobile-xl) {
+      font-size: 5rem;
+      left: -46px;
+    }
+  }
 }
-}
-
-
-
-

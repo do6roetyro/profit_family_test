@@ -1,4 +1,9 @@
 @use "../global/variables.scss";
 @use "../global/mixins.scss";
 
+.learn-blocks {
 
+  @media (max-width: variables.$screen-mobile-xl) {
+    gap: 16px;
+  }
+}

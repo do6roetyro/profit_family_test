@@ -5,5 +5,6 @@
   display: none;
   @media (max-width: variables.$screen-mobile-xl) {
     display: block;
+    margin-left: auto;
   }
 }

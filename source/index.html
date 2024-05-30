@@ -15,8 +15,7 @@
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="favicons/apple-touch-icon.png" type="image/png" />
-
-    <script defer="defer" src="scripts/index.js"></script>
+    <script defer="defer" src="scripts/index.js" type="module"></script>
     <title>Profit_Family_test</title>
   </head>
 
@@ -24,158 +23,167 @@
     <div class="page__container">
       <header class="main-header">
         <nav class="main-header__navigation navigation wrapper">
-          <a class="navigation__main-link main-link" href="#">
-            <span class="visually-hidden">Перейти на главную страницу</span>
-            <img
-              class="main-link__logo"
-              src="https://assets.htmlacademy.ru/img/logo.v2.svg"
-              width="104"
-              height="36"
-              alt="HTML Academy"
-            />
-          </a>
-          <button class="main-header__button menu-button" type="button"></button>
-          <div class="main-header__container">
-          <ul class="navigation__list learn-blocks list">
-            <li
-              class="navigation__item navigation__item--learn learn-block"
-              tabindex="0"
+          <div class="main-header__container main-header__container--top">
+            <a class="navigation__main-link main-link" href="#">
+              <span class="visually-hidden">Перейти на главную страницу</span>
+              <img
+                class="main-link__logo"
+                src="https://assets.htmlacademy.ru/img/logo.v2.svg"
+                width="104"
+                height="36"
+                alt="HTML Academy"
+              />
+            </a>
+            <button
+              class="hamburger hamburger--slider js-hamburger main-header__button menu-button"
+              type="button"
             >
-              <span
-                class="navigation__title learn-block__title learn-block__title--courses"
-              >
-                <span>Курсы</span>
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
               </span>
-              <ul class="learn-block__list list">
-                <li class="learn-block__item">
-                  <a class="navigation__link link" href="#"
-                    >HTML и CSS, уровень 1</a
-                  >
-                </li>
-                <li class="learn-block__item">
-                  <a class="navigation__link link" href="#"
-                    >HTML и CSS, уровень 2</a
-                  >
-                </li>
-                <li class="learn-block__item">
-                  <a class="navigation__link link" href="#"
-                    >JavaScript, уровень 1</a
-                  >
-                </li>
-                <li class="learn-block__item">
-                  <a class="navigation__link link" href="#"
-                    >JavaScript, уровень 2</a
-                  >
-                </li>
-                <li class="learn-block__item">
-                  <a class="navigation__link link" href="#"
-                    >Node.js, уровень 1</a
-                  >
-                </li>
-                <li class="learn-block__item">
-                  <a class="navigation__link link" href="#">PHP, уровень 1</a>
-                </li>
-              </ul>
-            </li>
-            <li
-              class="navigation__item navigation__item--learn learn-block"
-              tabindex="0"
-            >
-              <span
-                class="navigation__title learn-block__title learn-block__title--professions"
+            </button>
+          </div>
+          <div class="main-header__container main-header__container--bottom">
+            <ul class="navigation__list learn-blocks list">
+              <li
+                class="navigation__item navigation__item--learn learn-block"
+                tabindex="0"
               >
-                <span>Профессии</span>
-              </span>
-              <ul class="learn-block__list list">
-                <li class="learn-block__item">
-                  <a class="navigation__link link" href="#"
-                    >HTML и CSS, уровень 1</a
-                  >
-                </li>
-                <li class="learn-block__item">
-                  <a class="navigation__link link" href="#"
-                    >HTML и CSS, уровень 2</a
-                  >
-                </li>
-                <li class="learn-block__item">
-                  <a class="navigation__link link" href="#"
-                    >JavaScript, уровень 1</a
-                  >
-                </li>
-                <li class="learn-block__item">
-                  <a class="navigation__link link" href="#"
-                    >JavaScript, уровень 2</a
-                  >
-                </li>
-                <li class="learn-block__item">
-                  <a class="navigation__link link" href="#"
-                    >Node.js, уровень 1</a
-                  >
-                </li>
-                <li class="learn-block__item">
-                  <a class="navigation__link link" href="#">PHP, уровень 1</a>
-                </li>
-              </ul>
-            </li>
-            <li
-              class="navigation__item navigation__item--learn learn-block"
-              tabindex="0"
-            >
-              <span
-                class="navigation__title learn-block__title learn-block__title--intensives"
+                <span
+                  class="navigation__title learn-block__title learn-block__title--courses"
+                >
+                  <span>Курсы</span>
+                </span>
+                <ul class="learn-block__list list">
+                  <li class="learn-block__item">
+                    <a class="navigation__link link" href="#"
+                      >HTML и CSS, уровень 1</a
+                    >
+                  </li>
+                  <li class="learn-block__item">
+                    <a class="navigation__link link" href="#"
+                      >HTML и CSS, уровень 2</a
+                    >
+                  </li>
+                  <li class="learn-block__item">
+                    <a class="navigation__link link" href="#"
+                      >JavaScript, уровень 1</a
+                    >
+                  </li>
+                  <li class="learn-block__item">
+                    <a class="navigation__link link" href="#"
+                      >JavaScript, уровень 2</a
+                    >
+                  </li>
+                  <li class="learn-block__item">
+                    <a class="navigation__link link" href="#"
+                      >Node.js, уровень 1</a
+                    >
+                  </li>
+                  <li class="learn-block__item">
+                    <a class="navigation__link link" href="#">PHP, уровень 1</a>
+                  </li>
+                </ul>
+              </li>
+              <li
+                class="navigation__item navigation__item--learn learn-block"
+                tabindex="0"
               >
-                <span>Интенсивы</span>
-              </span>
-              <ul class="learn-block__list list">
-                <li class="learn-block__item">
-                  <a class="navigation__link link" href="#"
-                    >HTML и CSS, уровень 1</a
-                  >
-                </li>
-                <li class="learn-block__item">
-                  <a class="navigation__link link" href="#"
-                    >HTML и CSS, уровень 2</a
-                  >
-                </li>
-                <li class="learn-block__item">
-                  <a class="navigation__link link" href="#"
-                    >JavaScript, уровень 1</a
-                  >
-                </li>
-                <li class="learn-block__item">
-                  <a class="navigation__link link" href="#"
-                    >JavaScript, уровень 2</a
-                  >
-                </li>
-                <li class="learn-block__item">
-                  <a class="navigation__link link" href="#"
-                    >Node.js, уровень 1</a
-                  >
-                </li>
-                <li class="learn-block__item">
-                  <a class="navigation__link link" href="#">PHP, уровень 1</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="navigation__list user-list list">
-            <li class="navigation__item user-list__item">
-              <a
-                class="navigation__title user-list__title--registration user-list__title navigation__link link"
-                href="#"
+                <span
+                  class="navigation__title learn-block__title learn-block__title--professions"
+                >
+                  <span>Профессии</span>
+                </span>
+                <ul class="learn-block__list list">
+                  <li class="learn-block__item">
+                    <a class="navigation__link link" href="#"
+                      >HTML и CSS, уровень 1</a
+                    >
+                  </li>
+                  <li class="learn-block__item">
+                    <a class="navigation__link link" href="#"
+                      >HTML и CSS, уровень 2</a
+                    >
+                  </li>
+                  <li class="learn-block__item">
+                    <a class="navigation__link link" href="#"
+                      >JavaScript, уровень 1</a
+                    >
+                  </li>
+                  <li class="learn-block__item">
+                    <a class="navigation__link link" href="#"
+                      >JavaScript, уровень 2</a
+                    >
+                  </li>
+                  <li class="learn-block__item">
+                    <a class="navigation__link link" href="#"
+                      >Node.js, уровень 1</a
+                    >
+                  </li>
+                  <li class="learn-block__item">
+                    <a class="navigation__link link" href="#">PHP, уровень 1</a>
+                  </li>
+                </ul>
+              </li>
+              <li
+                class="navigation__item navigation__item--learn learn-block"
+                tabindex="0"
               >
-                <span class="user-list__text"> Регистрация</span>
-              </a>
-            </li>
-            <li class="navigation__item user-list__item">
-              <a
-                class="navigation__title user-list__title--logout user-list__title navigation__link link"
-                href="#"
-                ><span class="user-list__text">Выйти</span></a
-              >
-            </li>
-          </ul>
-        </div>
+                <span
+                  class="navigation__title learn-block__title learn-block__title--intensives"
+                >
+                  <span>Интенсивы</span>
+                </span>
+                <ul class="learn-block__list list">
+                  <li class="learn-block__item">
+                    <a class="navigation__link link" href="#"
+                      >HTML и CSS, уровень 1</a
+                    >
+                  </li>
+                  <li class="learn-block__item">
+                    <a class="navigation__link link" href="#"
+                      >HTML и CSS, уровень 2</a
+                    >
+                  </li>
+                  <li class="learn-block__item">
+                    <a class="navigation__link link" href="#"
+                      >JavaScript, уровень 1</a
+                    >
+                  </li>
+                  <li class="learn-block__item">
+                    <a class="navigation__link link" href="#"
+                      >JavaScript, уровень 2</a
+                    >
+                  </li>
+                  <li class="learn-block__item">
+                    <a class="navigation__link link" href="#"
+                      >Node.js, уровень 1</a
+                    >
+                  </li>
+                  <li class="learn-block__item">
+                    <a class="navigation__link link" href="#">PHP, уровень 1</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navigation__list user-list list">
+              <li class="navigation__item user-list__item">
+                <a
+                  class="navigation__title user-list__title--registration user-list__title navigation__link link"
+                  href="#"
+                >
+                  <span class="user-list__text"> Регистрация</span>
+                </a>
+              </li>
+              <li class="navigation__item user-list__item">
+                <a
+                  class="navigation__title user-list__title--logout user-list__title navigation__link link"
+                  href="#"
+                  ><span class="user-list__text">Выйти</span></a
+                >
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
       <main class="main-container">
@@ -368,7 +376,7 @@
               </blockquote>
             </article>
             <aside class="topics__popular popular">
-              <h3 class="popular__title">
+              <h3 class="popular__title">Популярное</h3>
                 <ul class="popular__list list">
                   <li class="popular__item popular-item">
                     <a class="popular-item__link" href="#">
@@ -500,7 +508,11 @@
           </div>
         </section>
       </main>
-      <footer class="main-footer"></footer>
+      <footer class="main-footer">
+        <div class="main-footer__wrapper wrapper">
+          <a class="main-footer__link link" href="task2.html">Нажми, чтобы перейти на Задание 2 - Адаптивная форма на Flex.</a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

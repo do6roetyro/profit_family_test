@@ -1,0 +1,19 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.main-footer {
+  min-height: 5rem;
+  background-color: variables.$color-deep-darkblue;
+}
+
+.main-footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-footer__link {
+  color: variables.$color-white;
+  margin-top: 1rem;
+  font-size: 2rem;
+}

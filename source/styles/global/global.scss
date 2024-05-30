@@ -2,8 +2,7 @@
 @use "mixins.scss";
 @import "../../../node_modules/swiper/swiper";
 @import "../../../node_modules/swiper/swiper-bundle";
-
-
+@import "../../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 
 body {
   margin: 0;
@@ -39,7 +38,8 @@ span {
   padding: 0;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-size: 2.5rem;
 }
 
@@ -47,8 +47,16 @@ h4 {
   font-size: 1rem;
 }
 
+@media (max-width: variables.$screen-mobile-xl) {
+  h2,
+  h3 {
+    font-size: 1.5rem;
+  }
 
-
+  h4 {
+    font-size: 0.5rem;
+  }
+}
 
 .visually-hidden {
   position: absolute;

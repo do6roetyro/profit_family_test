@@ -4,27 +4,41 @@
 .learn-block {
   &:hover,
   &:focus-within {
-    background-color: #414157;
+    background-color: variables.$color-darkblue;
     .learn-block__list {
       display: flex;
       flex-direction: column;
       gap: 16px;
     }
+
+    @media (max-width: variables.$screen-mobile-xl) {
+      background-color: inherit;
+    }
   }
-
-
 }
 
 .learn-block__list {
   display: none;
   position: absolute;
-  background-color: #414157;
+  background-color: variables.$color-darkblue;
   width: fit-content;
-  top: 46px;
+  top: 80px;
   left: 0;
   min-width: 300px;
   padding: 16px;
   z-index: 5;
+
+  @media (max-width: variables.$screen-mobile-xl) {
+    position: static;
+    top: 46px;
+    display: none;
+    width: 100vw;
+    z-index: 0;
+    background-color: inherit;
+    padding: 0;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+  }
 }
 
 .learn-block__title {

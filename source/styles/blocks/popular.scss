@@ -1,3 +1,6 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
 .popular {
   overflow-x: hidden;
   text-overflow: ellipsis;
@@ -7,4 +10,10 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.popular__title {
+  color: variables.$color-other-tomato;
+  text-align: center;
+  padding-bottom: 1rem;
 }

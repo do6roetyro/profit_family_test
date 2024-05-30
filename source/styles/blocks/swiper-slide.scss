@@ -1,7 +1,6 @@
 @use "../global/variables.scss";
 @use "../global/mixins.scss";
 
-
 .swiper-slide {
   display: flex;
   justify-content: center;
@@ -12,10 +11,7 @@
     flex-shrink: 0;
     margin: auto;
     margin-right: 4rem;
-
   }
-
-
 }
 
 .swiper-slide__title {
@@ -29,7 +25,6 @@
 }
 
 .swiper-slide__image {
-
   border-radius: 0.5rem;
   object-fit: contain;
   width: clamp(256px, 30vw, 344px);
@@ -39,9 +34,9 @@
 .swiper-button-next {
   top: 50%;
 
-&:hover {
-  opacity: 0.5;
-}
+  &:hover {
+    opacity: 0.5;
+  }
 
   &::after {
     color: transparent;
@@ -63,5 +58,5 @@
 }
 
 .swiper-pagination-bullet-active {
-  background: #f2f2f2;
+  background: variables.$color-white-grey;
 }

@@ -59,6 +59,7 @@
     "w3c-html-validator": "1.6.4"
   },
   "dependencies": {
+    "hamburgers": "^1.2.1",
     "swiper": "^11.1.3"
   }
 }

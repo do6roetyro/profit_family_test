@@ -7,10 +7,22 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+
+  @media (max-width: variables.$screen-mobile-xl) {
+    display: block;
+  }
 }
 
 .navigation__list {
   display: flex;
+
+  @media (max-width: variables.$screen-mobile-xl) {
+    flex-direction: column;
+    width: 100%;
+    top: 0;
+    left: 0;
+    gap: 16px;
+  }
 }
 
 .navigation__item {
@@ -24,15 +36,19 @@
   &:hover {
     &:hover,
     &:focus-within {
-      background-color: #414157;
+      @media (min-width: variables.$screen-mobile-xl) {
+        background-color: variables.$color-darkblue;
+      }
+
       .learn-block__list {
         display: flex;
         flex-direction: column;
         gap: 16px;
       }
     }
+
     .navigation__title {
-      color: #8f8f9b;
+      color: variables.$color-grey;
       &::before {
         opacity: 1;
       }
@@ -47,13 +63,28 @@
       height: 0;
       border-width: 6px 4px 0;
       border-style: solid;
-      border-color: #8f8f9b transparent transparent;
+      border-color: variables.$color-grey transparent transparent;
     }
   }
 
   @media (max-width: 1024px) {
     padding-left: 12px;
     padding-right: 12px;
+  }
+
+  @media (max-width: variables.$screen-mobile-xl) {
+    width: 100%;
+
+    padding: 0.5rem 0;
+    border-bottom: variables.$color-grey 1px solid;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &--learn {
+      &::after {
+        display: none;
+      }
+    }
   }
 }
 
@@ -72,16 +103,27 @@
     opacity: 0.5;
   }
 
-  @media(max-width: variables.$screen-tablet) {
+  @media (max-width: variables.$screen-tablet) {
     span {
       display: none;
     }
+  }
+
+  @media (max-width: variables.$screen-mobile-xl) {
+    span {
+      display: block;
+    }
+  }
+
+  @media (min-width: variables.$screen-mobile-xl) {
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 
 .navigation__link {
   &:hover {
-    color: #8f8f9b;
+    color: variables.$color-grey;
   }
 }
 
@@ -91,5 +133,10 @@
 
   @media (max-width: 1024px) {
     margin-right: 16px;
+  }
+
+  @media (max-width: variables.$screen-mobile-xl) {
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }

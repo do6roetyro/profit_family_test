@@ -4,6 +4,6 @@
 .wrapper {
   margin: 0 auto;
   padding: 0 clamp(16px, 4.5vw, 137px);
-  min-width: variables.$screen-mobile;
+  min-width: variables.$screen-mobile-s;
   max-width: variables.$screen-desktop;
 }
