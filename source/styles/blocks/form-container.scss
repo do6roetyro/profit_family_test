@@ -1,0 +1,51 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.form-container {
+  border: 2px solid #00a4e4;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+
+  @media (max-width: variables.$screen-tablet) {
+    flex-direction: column;
+  }
+}
+
+.form-container__price-section,
+.form-container__form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: variables.$screen-tablet) {
+    width: 100%;
+  }
+}
+
+.form-container__price-section {
+  order: 1;
+}
+
+.form-container__logo {
+  order: 2;
+  img {
+    object-fit: cover;
+    width: auto;
+    height: auto;
+  }
+
+
+}
+
+.form-container__form-section {
+  order: 3;
+  background: linear-gradient(45deg, #00ff7f, #00bfff);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}

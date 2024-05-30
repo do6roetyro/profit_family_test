@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="fonts/ptsans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="favicons/apple-touch-icon.png" type="image/png" />
+    <script defer="defer" src="scripts/index.js" type="module"></script>
+    <title>Profit_Family_test</title>
+  </head>
+
+  <body class="page__body">
+    <div class="page__container">
+      <header class="main-header"></header>
+      <main class="main-container">
+        <div class="form-container">
+          <div class="form-container__price-section">
+            <div class="price-section__old-price">Обычная цена: 1449 р.</div>
+            <div class="price-section__current-price">
+              Цена по акции: 149 р.
+            </div>
+            <div class="price-section__stock">
+              Остаток товара на 11.11.2050:
+            </div>
+            <div class="price-section__count">58</div>
+          </div>
+          <div class="form-container__form-section">
+            <div class="form-section__title">
+              Введите ваши данные в форму ниже:
+            </div>
+            <form class="form-section__form">
+              <input
+                class="form__input form__input--name"
+                type="text"
+                placeholder="Ваше имя"
+                required
+              />
+              <input
+                class="form__input form__input--phone"
+                type="text"
+                placeholder="Ваш телефон"
+                required
+              />
+              <button class="form__button" type="submit">
+                ПОЛУЧИТЬ ЗА 149 РУБ.
+              </button>
+            </form>
+          </div>
+          <div class="form-container__logo">
+            <img
+              src="data:image/png;base64,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"
+              alt="Raccoon Logo"
+              width="200"
+              height="200"
+            />
+          </div>
+        </div>
+      </main>
+      <footer class="main-footer">
+        <div class="main-footer__wrapper wrapper">
+          <a class="main-footer__link link" href="index.html"
+            >Нажми, чтобы перейти на Задание 1-2 - Верстка сайта с нуля.</a
+          >
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

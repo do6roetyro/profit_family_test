@@ -1,0 +1,32 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.price-section__old-price {
+  text-decoration: line-through;
+  color: variables.$color-grey;
+  padding-bottom: 1rem;
+}
+
+.price-section__current-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: variables.$color-deep-darkblue;
+  background: linear-gradient(45deg, #00ff7f, #00bfff);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.price-section__stock {
+  margin-top: 10px;
+  color: variables.$color-grey;
+}
+
+.price-section__count {
+  font-size: 32px;
+  color: variables.$color-deep-darkblue;
+  font-weight: 700;
+  background: #00ff7f;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 7px dotted #00bfff;
+}
